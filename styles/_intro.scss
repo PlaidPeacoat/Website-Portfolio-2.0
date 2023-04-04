@@ -72,45 +72,42 @@ nav {
   flex: 1 1 40rem;
 }
 
-#plant-left {
-  animation: plant 1.5s ease infinite alternate;
-}
-#plant-right {
-  animation: plant 1.5s ease infinite alternate 0.5s;
+.programmer-svg {
+  clear:
+      both;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#me {
-  animation: me 1s ease infinite alternate;
-  transform-origin: bottom;
-}
-#clock-arrow {
-  animation: clock 1.5s infinite linear;
+#arm-and-cup {
+  animation: arm-and-cup 5s infinite linear alternate;
+  transform-origin: top right;
   transform-box: fill-box;
-  transform-origin: bottom;
 }
 
-@keyframes me {
+@keyframes arm-and-cup {
   from {
-    transform: rotateZ(-5deg);
+      transform: rotateZ(0deg)
   }
+
   to {
-    transform: rotateZ(5deg);
+      transform: rotateZ(20deg)
   }
 }
 
-@keyframes plant {
-  from {
-    transform: translateY(0%);
-  }
-  to {
-    transform: translateY(-30%);
-  }
+#code-text {
+  animation: code-text 3s ease-in-out infinite alternate;
+
 }
-@keyframes clock {
+
+@keyframes code-text {
   from {
-    transform: rotateZ(0deg);
+      transform: rotateX(0deg);
   }
+
   to {
-    transform: rotateZ(360deg);
+      transform: rotateX(23deg);
   }
 }

@@ -135,7 +135,7 @@ nav ul {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-
+/* need to figure out why the gradient inside the header not working correctly, only showing solid bar over text */
 .intro h2 {
   font-size: 8rem;
   padding-top: 2rem;
@@ -186,83 +186,43 @@ nav ul {
           flex: 1 1 40rem;
 }
 
-#plant-left {
-  -webkit-animation: plant 1.5s ease infinite alternate;
-          animation: plant 1.5s ease infinite alternate;
+.programmer-svg {
+  clear:
+      both;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#plant-right {
-  -webkit-animation: plant 1.5s ease infinite alternate 0.5s;
-          animation: plant 1.5s ease infinite alternate 0.5s;
-}
-
-#me {
-  -webkit-animation: me 1s ease infinite alternate;
-          animation: me 1s ease infinite alternate;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-}
-
-#clock-arrow {
-  -webkit-animation: clock 1.5s infinite linear;
-          animation: clock 1.5s infinite linear;
+#arm-and-cup {
+  animation: arm-and-cup 5s infinite linear alternate;
+  transform-origin: top right;
   transform-box: fill-box;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
 }
 
-@-webkit-keyframes me {
+@keyframes arm-and-cup {
   from {
-    -webkit-transform: rotateZ(-5deg);
-            transform: rotateZ(-5deg);
+      transform: rotateZ(0deg)
   }
+
   to {
-    -webkit-transform: rotateZ(5deg);
-            transform: rotateZ(5deg);
+      transform: rotateZ(20deg)
   }
 }
 
-@keyframes me {
-  from {
-    -webkit-transform: rotateZ(-5deg);
-            transform: rotateZ(-5deg);
-  }
-  to {
-    -webkit-transform: rotateZ(5deg);
-            transform: rotateZ(5deg);
-  }
+#code-text {
+  animation: code-text 3s ease-in-out infinite alternate;
+
 }
 
-@-webkit-keyframes plant {
+@keyframes code-text {
   from {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+      transform: rotateX(0deg);
   }
-  to {
-    -webkit-transform: translateY(-30%);
-            transform: translateY(-30%);
-  }
-}
 
-@keyframes plant {
-  from {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
   to {
-    -webkit-transform: translateY(-30%);
-            transform: translateY(-30%);
-  }
-}
-
-@-webkit-keyframes clock {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+      transform: rotateX(23deg);
   }
 }
 
