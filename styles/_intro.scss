@@ -21,29 +21,6 @@ nav {
   }
 }
 
-.intro {
-  min-height: 90vh;
-  width: 90%;
-  margin: auto;
-  flex-wrap: wrap;
-  @include flex(space-between, center, row);
-  h2 {
-    font-size: 8rem;
-    padding-top: 2rem;
-    background: $gradient;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-  }
-  h3 {
-    font-size: 6rem;
-    padding: 2rem 0rem;
-  }
-  p {
-    padding-top: 2rem;
-    color: $gray-text;
-  }
-}
 
 .splash {
   position: absolute;

@@ -135,14 +135,14 @@ nav ul {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* need to figure out why the gradient inside the header not working correctly, only showing solid bar over text */
+
 .intro h2 {
   font-size: 8rem;
   padding-top: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#38d39f), to(#38a4d3));
   background: linear-gradient(left, #38d39f, #38a4d3);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
   display: inline-block;
 }
 
