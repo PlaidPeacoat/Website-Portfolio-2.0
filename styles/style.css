@@ -469,4 +469,9 @@ footer h4 {
     width: 100%;
   }
 }
+
+.travelly:hover {
+  -webkit-animation: travelly 1s ease-in-out infinite alternate;
+          animation: travelly 1s ease-in-out infinite alternate;
+}
 /*# sourceMappingURL=style.css.map */
