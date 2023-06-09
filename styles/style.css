@@ -474,4 +474,29 @@ footer h4 {
   -webkit-animation: travelly 1s ease-in-out infinite alternate;
           animation: travelly 1s ease-in-out infinite alternate;
 }
-/*# sourceMappingURL=style.css.map */
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-img img {
+  width: 700px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.project-description {
+  flex: 1;
+  padding: 0 20px; /* Adjust the padding as needed */
+}
+
+.project-description h2 {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.project-description p {
+  font-size: 16px; /* Adjust the font size as needed */
+  line-height: 1.5;
+}
